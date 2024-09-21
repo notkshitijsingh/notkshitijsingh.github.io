@@ -52,7 +52,7 @@ const Resume = () => {
                 <Socials />
               </div>
               <div className="mt-5">
-                <h1 className="text-2xl font-bold">Projects</h1>
+                <h1 className="text-2xl font-bold">Experience</h1>
 
                 {resume.experiences.map(
                   ({ id, dates, type, position, bullets }) => (
@@ -69,22 +69,45 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">
-                  <h2 className="text-lg">{resume.education.universityName}</h2>
+                  <h2 className="text-lg">B. Tech- CSE with Spec. in AIML at Vellore Insititute of Technology, Bhopal</h2>
                   <h3 className="text-sm opacity-75">
-                    {resume.education.universityDate}
+                    Sep 2021 - Aug 2025 | CGPA: 8.27
                   </h3>
-                  <p className="text-sm mt-2 opacity-50">
-                    {resume.education.universityPara}
+                  <p style={{color: '#7c7d7d', fontSize: 'smaller'}}>
+                    Noteworthy Courses: OOP in C++, Python, Data Structures and Algorithms, Data Science, Artificial Intelligence, Database Management Systems.
                   </p>
                 </div>
                 <div className="mt-2">
-                  <h2 className="text-lg">Applied Machine Learning in Python (Online Course)</h2>
+                  <h2 className="text-lg">Higher Secondary School at Jodhamal Public School, Jammu</h2>
                   <h3 className="text-sm opacity-75">
-                    University of Michigan
+                    May 2021 | Percentage: 90.5%
                   </h3>
-                  <p className="text-sm mt-2 opacity-50">
-                    Grade Received: 99%  [<a href="https://coursera.org/verify/MRDSJJMQAJ9M">Click for Certification</a>]
-                  </p>
+                </div>
+                <div className="mt-2">
+                  <h2 className="text-lg">Secondary School at Jodhamal Public School, Jammu</h2>
+                  <h3 className="text-sm opacity-75">
+                    May 2019 | Percentage: 93.8%
+                  </h3>
+                </div>
+                <br></br>
+                <h1 className="text-2xl font-bold">Courses and Certificates</h1>
+                <div className="mt-2">
+                  <h2 className="text-lg">High Performance Coding in DSA</h2>
+                  <h3 className="text-sm opacity-75">
+                    iamneo | Jan 2024
+                  </h3>
+                </div>
+                <div className="mt-2">
+                  <h2 className="text-lg">Data Analytis Professional Certificate</h2>
+                  <h3 className="text-sm opacity-75">
+                    Google | Mar 2023
+                  </h3>
+                </div>
+                <div className="mt-2">
+                  <h2 className="text-lg">Applied Machine Learning in Python</h2>
+                  <h3 className="text-sm opacity-75">
+                    University of Michigan | Jan 2023
+                  </h3>
                 </div>
               </div>
               <div className="mt-5">
@@ -118,7 +141,7 @@ const Resume = () => {
 
                   {resume.others && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Interests</h2>
+                      <h2 className="text-lg">Databases</h2>
                       <ul className="list-disc">
                         {resume.others.map((other, index) => (
                           <li key={index} className="ml-5 py-2">
