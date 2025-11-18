@@ -79,7 +79,7 @@ const Contact = () => {
                 </Button>
               </a>
               <a
-                href="https://linkedin.com/in/kshitij-singh"
+                href="https://www.linkedin.com/in/kshitijsingh-lnkdin/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

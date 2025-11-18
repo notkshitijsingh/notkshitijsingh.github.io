@@ -8,8 +8,7 @@ const projects = [
     description: "Full-stack wellness platform with AI-powered survey analysis and chat assistance. Features JWT authentication, MySQL database, and comprehensive testing suite.",
     tags: ["Angular", "Spring Boot", "MySQL", "Genkit", "Selenium"],
     date: "Oct 2025",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/notkshitijsingh/wellness-portal",
     gradient: "from-cyan-500 to-blue-500",
   },
   {
@@ -17,8 +16,8 @@ const projects = [
     description: "Intelligent Agile Scrum partner that auto-generates project boards from descriptions. Features drag-and-drop interface, burndown charts, and an AI Agile coach.",
     tags: ["Next.js", "React", "TypeScript", "Genkit", "Tailwind"],
     date: "Sep 2025",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/notkshitijsingh/AgileFlowAI",
+    demo: "https://agile-flow-ai.vercel.app/",
     gradient: "from-purple-500 to-pink-500",
   },
   {
@@ -26,7 +25,7 @@ const projects = [
     description: "Advanced AI model combining CNNs and Conditional GANs to colorize black-and-white images with 91.54% accuracy. Creates realistic Van Gogh-style color renditions.",
     tags: ["Python", "PyTorch", "GANs", "Computer Vision"],
     date: "Jan 2023",
-    github: "#",
+    github: "https://github.com/notkshitijsingh/vangogh-image-colorizer",
     gradient: "from-orange-500 to-red-500",
   },
   {
@@ -34,7 +33,7 @@ const projects = [
     description: "Open-source water quality prediction using satellite imagery. Improved accuracy by 20% through data preprocessing and model optimization.",
     tags: ["Python", "Scikit-Learn", "Data Analytics"],
     date: "May 2023",
-    github: "#",
+    github: "https://github.com/notkshitijsingh/water-quality-from-satellite-images",
     gradient: "from-green-500 to-teal-500",
   },
 ];

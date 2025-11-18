@@ -4,7 +4,7 @@ import { Github, Mail, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const name = "KSHITIJ SINGH";
+  const name = "Kshitij Singh";
   const letters = name.split("");
 
   useEffect(() => {
@@ -30,18 +30,26 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-5xl mx-auto">
         {/* Scattered letters animation */}
         <div className="relative h-32 mb-8">
-          {letters.map((letter, index) => {
-            const pos = getRandomPosition(index);
-            return (
+          <div
+            className="flex justify-center"
+            style={{
+              // This is an approximation for centering.
+              // A more precise method might involve measuring the text width.
+              transform: `translateX(-${name.length > 10 ? '1' : '0'}ch)`,
+            }}
+          >
+            {letters.map((letter, index) => {
+              const pos = getRandomPosition(index);
+              return (
               <span
                 key={index}
-                className={`absolute left-1/2 top-1/2 text-5xl md:text-7xl font-bold text-foreground transition-all duration-1000 ${
+                className={`relative text-5xl md:text-7xl font-bold text-foreground transition-all duration-1000 ${
                   isVisible ? "" : "opacity-0"
                 }`}
                 style={{
                   transform: isVisible
-                    ? "translate(-50%, -50%)"
-                    : `translate(calc(-50% + ${pos.x}px), calc(-50% + ${pos.y}px)) rotate(${pos.x}deg)`,
+                    ? "translate(0, 0) rotate(0)"
+                    : `translate(${pos.x}px, ${pos.y}px) rotate(${pos.x}deg)`,
                   transitionDelay: `${index * 0.05}s`,
                 }}
               >
@@ -49,11 +57,12 @@ const Hero = () => {
               </span>
             );
           })}
+          </div>
         </div>
 
         <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.8s", opacity: 0, animationFillMode: "forwards" }}>
           <h2 className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
-            Programmer Analyst - SDET
+            Programmer Analyst
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Crafting elegant solutions with{" "}

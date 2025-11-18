@@ -34,7 +34,7 @@ const About = () => {
               <Briefcase className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-2xl font-bold mb-2 group-hover:text-secondary transition-colors">Experience</h3>
-            <p className="text-muted-foreground mb-2">Programmer Analyst - SDET</p>
+            <p className="text-muted-foreground mb-2">Programmer Analyst</p>
             <p className="text-sm text-muted-foreground">Cognizant Technology Solutions</p>
             <p className="text-sm text-muted-foreground">Jul 2025 - Present</p>
             <p className="text-sm text-secondary mt-2">Gen-C Next Program Graduate</p>
@@ -49,7 +49,7 @@ const About = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>• 91.54% AI Colorization Accuracy</li>
               <li>• 20% Water Quality Prediction Boost</li>
-              <li>• Agile Scrum Expert</li>
+              <li>• Skilled in Development and Automation</li>
               <li>• Open Source Contributor</li>
             </ul>
           </Card>
