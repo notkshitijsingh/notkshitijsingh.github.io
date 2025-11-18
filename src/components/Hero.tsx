@@ -99,7 +99,7 @@ const Hero = () => {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/kshitij-singh"
+              href="https://www.linkedin.com/in/kshitijsingh-lnkdin/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
